@@ -7,3 +7,6 @@
 ##### nested group E.g: describe/context
 ##### example E.g: it
 ##### expectations E.g expect().to()
+
+## Conventions:
+> When testing class methods put a '.' in front of the name and for an instance method put a '#' in front of the name E.g '#full_name' is an instance method test
