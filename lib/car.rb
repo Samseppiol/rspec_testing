@@ -14,7 +14,7 @@ class Car
   end
 
   def full_name
-    "#{self.yearto_s} #{self.make} (#{self.colour})"
+    "#{self.year.to_s} #{self.make} (#{self.colour})"
   end
 
 

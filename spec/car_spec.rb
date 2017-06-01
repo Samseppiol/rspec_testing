@@ -27,7 +27,7 @@ describe 'Car' do
 
     it 'returns an array of colours' do
       a = ['blue', 'black', 'red', 'green']
-      expect(Car.colors).to match_array(a)
+      expect(Car.colours).to match_array(a)
     end
 
   end
@@ -35,16 +35,16 @@ describe 'Car' do
   describe '#full_name' do
 
     it 'returns a string in the expected format' do
-      @honda = Car.new(:make => 'Honda', :year => 2004, :color => 'blue')
-      expect(car.full_name).to eq('2004 Honda (blue)')
+      @honda = Car.new(:make => 'Honda', :year => 2004, :colour => 'blue')
+      expect(@honda.full_name).to eq('2004 Honda (blue)')
     end
 
     context 'when initialized with no arguments' do
       it 'returns a string with default values' do
         car = Car.new
         expect(car.full_name).to eq('2007 Volvo (unknown)')
+      end
     end
-  end
 
 end
 
